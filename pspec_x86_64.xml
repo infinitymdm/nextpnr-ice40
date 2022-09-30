@@ -1,0 +1,34 @@
+<PISI>
+    <Source>
+        <Name>nextpnr-ice40</Name>
+        <Packager>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Packager>
+        <License>ISC</License>
+        <PartOf>office.scientific</PartOf>
+        <Summary xml:lang="en">A portable FPGA place and route tool.</Summary>
+        <Description xml:lang="en">nextpnr is a vendor-neutral, timing-driven, FOSS FPGA placement and routing tool.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>nextpnr-ice40</Name>
+        <Summary xml:lang="en">A portable FPGA place and route tool.</Summary>
+        <Description xml:lang="en">nextpnr is a vendor-neutral, timing-driven, FOSS FPGA placement and routing tool.
+</Description>
+        <PartOf>office.scientific</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/nextpnr-ice40</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2022-09-30</Date>
+            <Version>0.4</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Marcus Mellor</Name>
+            <Email>infinitymdm@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

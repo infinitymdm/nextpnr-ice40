@@ -1,0 +1,23 @@
+name       : nextpnr-ice40
+version    : 0.4
+release    : 1
+source     :
+    - https://github.com/YosysHQ/nextpnr/archive/refs/tags/nextpnr-0.4.tar.gz : ae8e01496c3bb6607cef0e2501b8cf00aba564e9b116dd323887575ab82757c0
+license    : ISC
+summary    : A portable FPGA place and route tool.
+description: |
+    nextpnr is a vendor-neutral, timing-driven, FOSS FPGA placement and routing tool.
+component  : office.scientific
+builddeps  :
+    - pkgconfig(eigen3)
+    - pkgconfig(python3)
+    - icestorm
+    - libboost-devel
+    - qt5-base-devel
+    - yosys
+setup      : |
+    %cmake . -DARCH=ice40 -DBUILD_GUI=ON
+build      : |
+    %make
+install    : |
+    %make_install
